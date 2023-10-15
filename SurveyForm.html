@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <form id="surveyForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="USA">India</option>
+                <option value="Canada">Canada</option>
+                <!-- Add more country options here -->
+            </select>
+
+            <label>Gender:</label>
+            <input type="checkbox" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </form>
+    </div>
+
+    <div id="popup" style="display: none;">
+        <h2>Survey Data</h2>
+        <p id="popupContent"></p>
+        <button id="closePopup">Close</button>
+    </div>
+</body>
+</html>
